@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">SensorApp</string>
+    <string name="accelerometer_title">Accelerometer</string>
+    <string name="gyroscope_title">Gyroscope</string>
+    <string name="magno_title">Magnetometer</string>
+    <string name="pressure_title">Pressure</string>
+    <string name="light_title">Light</string>
+    <string name="temperature_title">Temperature</string>
+    <string name="humidity_title">Humidity</string>
+    <string name="value_is_zero">0</string>
+    <string name="simple_icon_description">Simple Icon</string>
+    <string name="sensor_not_supported">N/A</string>
+</resources>

@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/top_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10sp"
+    tools:context="com.example.brebner.sensorapp.MainActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:id="@+id/accelerometer_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewAccelerometerTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/accelerometer_title" />
+
+                <LinearLayout
+                    android:id="@+id/accelerometer_values_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textViewXvalue"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:fontFamily="serif-monospace"
+                        android:text="X"
+                        android:textAlignment="center"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/textViewYvalue"
+                        android:layout_width="100sp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif-monospace"
+                        android:text="Y"
+                        android:textAlignment="center"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/textViewZvalue"
+                        android:layout_width="100sp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif-monospace"
+                        android:text="Z"
+                        android:textAlignment="center"
+                        android:textSize="18sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/gyro_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewGyroTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/gyroscope_title" />
+
+                <LinearLayout
+                    android:id="@+id/gyro_values_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textViewXGyroValue"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:fontFamily="serif-monospace"
+                        android:text="X"
+                        android:textAlignment="center"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/textViewYGyroValue"
+                        android:layout_width="100sp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif-monospace"
+                        android:text="Y"
+                        android:textAlignment="center"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/textViewZGyroValue"
+                        android:layout_width="100sp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif-monospace"
+                        android:text="Z"
+                        android:textAlignment="center"
+                        android:textSize="18sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/magno_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewMagno"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/magno_title" />
+
+                <LinearLayout
+                    android:id="@+id/magno_values_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textViewXMagnoValue"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:fontFamily="serif-monospace"
+                        android:text="X"
+                        android:textAlignment="center"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/textViewYMagnoValue"
+                        android:layout_width="100sp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif-monospace"
+                        android:text="Y"
+                        android:textAlignment="center"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/textViewZMagnoValue"
+                        android:layout_width="100sp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif-monospace"
+                        android:text="Z"
+                        android:textAlignment="center"
+                        android:textSize="18sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/light_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewLight"
+                    android:layout_width="100sp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/light_title" />
+
+                <TextView
+                    android:id="@+id/textViewLightValue"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:fontFamily="serif-monospace"
+                    android:text="@string/value_is_zero"
+                    android:textAlignment="center"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/pressure_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewPressure"
+                    android:layout_width="100sp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pressure_title" />
+
+                <TextView
+                    android:id="@+id/textViewPressureValue"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:fontFamily="serif-monospace"
+                    android:text="@string/value_is_zero"
+                    android:textAlignment="center"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/temperature_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewTemperature"
+                    android:layout_width="100sp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/temperature_title" />
+
+                <TextView
+                    android:id="@+id/textViewTemperatureValue"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:fontFamily="serif-monospace"
+                    android:text="@string/value_is_zero"
+                    android:textAlignment="center"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/humidity_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewHumidity"
+                    android:layout_width="100sp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/humidity_title" />
+
+                <TextView
+                    android:id="@+id/textViewHumidityValue"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:fontFamily="serif-monospace"
+                    android:text="@string/value_is_zero"
+                    android:textAlignment="center"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="97dp"
+                    android:layout_height="31dp"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/simple_icon_description"
+                    app:srcCompat="@drawable/thermo" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.constraint.ConstraintLayout>
+
+
+</LinearLayout>
